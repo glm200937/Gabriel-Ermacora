@@ -1,0 +1,13 @@
+# Configuration Netlify pour le portfolio de Gabriel Ermacora
+
+# Redirection pour la page contact (accès direct)
+[[redirects]]
+  from = "/contact"
+  to = "/pages/contact.html"
+  status = 200
+
+# Redirection si l'utilisateur tape /contact.html à la racine
+[[redirects]]
+  from = "/contact.html"
+  to = "/pages/contact.html"
+  status = 200
