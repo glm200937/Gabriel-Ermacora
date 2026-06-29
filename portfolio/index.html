@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel Ermacora - Portfolio professionnel | Étudiant en cybersécurité, informatique, réseaux et électronique">
+    <title>Gabriel Ermacora | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">GE<span class="dot"></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active" data-i18n="nav.home">Accueil</a>
+                <a href="pages/about.html" class="nav-link" data-i18n="nav.about">À propos</a>
+                <a href="pages/projects.html" class="nav-link" data-i18n="nav.projects">Projets</a>
+                <a href="pages/skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a>
+                <a href="pages/contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">FR</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label" data-i18n="hero.label">Bonjour, je suis</div>
+                <h1 class="hero-title">Gabriel Ermacora</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description" data-i18n="hero.description">
+                    Étudiant en Bac Pro CIEL passionné par le développement logiciel, 
+                    la cybersécurité et l'électronique. Je crée des solutions techniques 
+                    innovantes et pratiques.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">11+</div>
+                        <div class="stat-label" data-i18n="hero.stat_projects">Projets</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label" data-i18n="hero.stat_langs">Langages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label" data-i18n="hero.stat_internships">Stages</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="pages/projects.html" class="btn btn-primary" data-i18n="hero.btn_projects">Voir mes projets</a>
+                    <a href="cv.pdf" class="btn btn-secondary" download data-i18n="hero.btn_cv">Télécharger CV</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">gabriel@portfolio</div>
+                    </div>
+                    <div class="window-body">
+                        <div class="code-line"><span class="prompt">$</span> cat profile.json</div>
+                        <div class="code-output">{
+  <span class="key">"name"</span>: <span class="string">"Gabriel Ermacora"</span>,
+  <span class="key">"role"</span>: <span class="string">"Étudiant CIEL"</span>,
+  <span class="key">"location"</span>: <span class="string">"Tours, France"</span>,
+  <span class="key">"skills"</span>: [<span class="string">"Python"</span>, <span class="string">"Swift"</span>, <span class="string">"C++"</span>]
+}</div>
+                        <div class="code-line"><span class="prompt">$</span> <span class="cursor-blink">_</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h3 data-i18n="intro.education_title">Formation</h3>
+                    <p data-i18n="intro.education_desc">Bac Pro CIEL au Lycée Notre-Dame La Riche</p>
+                    <a href="pages/about.html#education" class="card-link">
+                        <span data-i18n="intro.education_link">En savoir plus</span> <span class="arrow"></span>
+                    </a>
+                </div>
+                
+                <div class="intro-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 data-i18n="intro.experience_title">Expérience</h3>
+                    <p data-i18n="intro.experience_desc">Stages en robotique et informatique</p>
+                    <a href="pages/about.html#experience" class="card-link">
+                        <span data-i18n="intro.experience_link">Voir mon parcours</span> <span class="arrow"></span>
+                    </a>
+                </div>
+                
+                <div class="intro-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <h3 data-i18n="intro.projects_title">Projets</h3>
+                    <p data-i18n="intro.projects_desc">Applications, web, électronique</p>
+                    <a href="pages/projects.html" class="card-link">
+                        <span data-i18n="intro.projects_link">Découvrir</span> <span class="arrow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta.title">Travaillons ensemble</h2>
+                <p data-i18n="cta.desc">Ouvert aux stages et projets collaboratifs</p>
+                <div class="cta-actions">
+                    <a href="pages/contact.html" class="btn btn-primary" data-i18n="cta.btn_contact">Me contacter</a>
+                    <a href="cv.pdf" class="btn btn-secondary" download data-i18n="cta.btn_cv">Télécharger CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">GE<span class="dot"></span></div>
+                    <p data-i18n="footer.desc">Étudiant en cybersécurité, informatique, réseaux et électronique</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.nav_title">Navigation</h4>
+                        <a href="index.html" data-i18n="nav.home">Accueil</a>
+                        <a href="pages/about.html" data-i18n="nav.about">À propos</a>
+                        <a href="pages/projects.html" data-i18n="nav.projects">Projets</a>
+                        <a href="pages/skills.html" data-i18n="nav.skills">Compétences</a>
+                        <a href="pages/contact.html" data-i18n="nav.contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.contact_title">Contact</h4>
+                        <a href="mailto:gabriel.ermacora.pro@gmail.com">Email</a>
+                        <a href="tel:+33767297818" data-i18n="contact.label_phone">Téléphone</a>
+                        <p class="footer-text">Tours, France</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gabriel Ermacora. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
