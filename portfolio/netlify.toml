@@ -1,0 +1,7 @@
+# Configuration Netlify pour le portfolio de Gabriel Ermacora
+
+[build]
+  publish = "."
+
+# Redirection après soumission du formulaire
+# La redirection est gérée par l'attribut 'action' du formulaire HTML

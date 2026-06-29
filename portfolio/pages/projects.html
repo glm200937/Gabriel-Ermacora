@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Gabriel Ermacora</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">GE<span class="dot"></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link" data-i18n="nav.home">Accueil</a>
+                <a href="about.html" class="nav-link" data-i18n="nav.about">À propos</a>
+                <a href="projects.html" class="nav-link active" data-i18n="nav.projects">Projets</a>
+                <a href="skills.html" class="nav-link" data-i18n="nav.skills">Compétences</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">FR</button>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="projects.title">Mes Projets</h1>
+            <p class="subtitle" data-i18n="projects.subtitle">Réalisations techniques concrètes</p>
+        </div>
+    </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.github_projects_title">Projets GitHub</h2>
+            <p class="subtitle" data-i18n="projects.github_projects_subtitle">Mes dépôts personnels en cours de développement</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.52-1.22-1.81-2.14-3.11-2.14A5.07 5.07 0 0 0 12 5.07a5.07 5.07 0 0 0-4.89-2.21c-1.3.0-2.59.92-3.11 2.14A5.44 5.44 0 0 0 2 10.77c0 4.43 3.3 5.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.status_done">Terminé</span>
+                        <h3>Gabriel-Ermacora</h3>
+                        <p data-i18n="projects.project_gabriel_ermacora_desc">Mon site portfolio personnel.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/glm200937/Gabriel-Ermacora" target="_blank" class="project-link">Voir sur GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.52-1.22-1.81-2.14-3.11-2.14A5.07 5.07 0 0 0 12 5.07a5.07 5.07 0 0 0-4.89-2.21c-1.3.0-2.59.92-3.11 2.14A5.44 5.44 0 0 0 2 10.77c0 4.43 3.3 5.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.status_inprogress">En cours</span>
+                        <h3>ironflow</h3>
+                        <p data-i18n="projects.project_ironflow_desc">Application mobile de musculation type Strava, combinant suivi d'entraînement (charges, reps, PR), statistiques de progression et réseau social fitness avec feed, défis et classements entre utilisateurs.</p>
+                        <div class="project-tags">
+                            <span>Mobile</span>
+                            <span>Fitness</span>
+                            <span>Social</span>
+                        </div>
+                        <a href="https://github.com/glm200937/ironflow" target="_blank" class="project-link">Voir sur GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.52-1.22-1.81-2.14-3.11-2.14A5.07 5.07 0 0 0 12 5.07a5.07 5.07 0 0 0-4.89-2.21c-1.3.0-2.59.92-3.11 2.14A5.44 5.44 0 0 0 2 10.77c0 4.43 3.3 5.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.status_inprogress">En cours</span>
+                        <h3>opencollab</h3>
+                        <p data-i18n="projects.project_opencollab_desc">Plateforme collaborative open source et auto-hébergeable regroupant gestion de fichiers, notes, projets, dépôts Git et édition collaborative dans une interface unique ; alternative à GitHub, Notion et Nextcloud.</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>Collaboration</span>
+                            <span>Open Source</span>
+                        </div>
+                        <a href="https://github.com/glm200937/opencollab" target="_blank" class="project-link">Voir sur GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.52-1.22-1.81-2.14-3.11-2.14A5.07 5.07 0 0 0 12 5.07a5.07 5.07 0 0 0-4.89-2.21c-1.3.0-2.59.92-3.11 2.14A5.44 5.44 0 0 0 2 10.77c0 4.43 3.3 5.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.status_done">Terminé</span>
+                        <h3>Decision-maker</h3>
+                        <p data-i18n="projects.project_decision_maker_desc">Outil d'aide à la prise de décision.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Decision Science</span>
+                        </div>
+                        <a href="https://github.com/glm200937/Decision-maker-" target="_blank" class="project-link">Voir sur GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.52-1.22-1.81-2.14-3.11-2.14A5.07 5.07 0 0 0 12 5.07a5.07 5.07 0 0 0-4.89-2.21c-1.3.0-2.59.92-3.11 2.14A5.44 5.44 0 0 0 2 10.77c0 4.43 3.3 5.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.status_done">Terminé</span>
+                        <h3>GLM-password-generator</h3>
+                        <p data-i18n="projects.project_glm_password_generator_desc">Générateur de mots de passe.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Security</span>
+                        </div>
+                        <a href="https://github.com/glm200937/GLM-password-generator" target="_blank" class="project-link">Voir sur GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Autres réalisations</h2>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_mobile">Mobile</span>
+                        <h3 data-i18n="projects.p1_title">App Pro iPad</h3>
+                        <p data-i18n="projects.p1_desc">Application professionnelle en Swift pour gestion des réparations smartphones. Base de données locale, génération de devis PDF.</p>
+                        <div class="project-tags">
+                            <span>Swift</span>
+                            <span>iOS</span>
+                            <span>Xcode</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_electro">Électronique</span>
+                        <h3 data-i18n="projects.p2_title">Kart Électrique</h3>
+                        <p data-i18n="projects.p2_desc">Kart avec moteur brushless, transmission optimisée et récupération d'énergie au freinage.</p>
+                        <div class="project-tags">
+                            <span>Brushless</span>
+                            <span>BMS</span>
+                            <span>Électronique</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_web">Web</span>
+                        <h3 data-i18n="projects.p3_title">Sites Web Responsives</h3>
+                        <p data-i18n="projects.p3_desc">Sites multi-pages en HTML, CSS et JavaScript. Design moderne, animations, 100% responsive.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_arduino">Arduino</span>
+                        <h3 data-i18n="projects.p4_title">Projets Embarqués</h3>
+                        <p data-i18n="projects.p4_desc">LED RGB, feux tricolores, systèmes d'automatisation avec capteurs et servomoteurs.</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>C++</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_net">Réseau</span>
+                        <h3 data-i18n="projects.p5_title">Infrastructure Réseau</h3>
+                        <p data-i18n="projects.p5_desc">Configuration VLANs, routage, sécurisation ACL sur Packet Tracer.</p>
+                        <div class="project-tags">
+                            <span>Cisco</span>
+                            <span>VLAN</span>
+                            <span>Sécurité</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat" data-i18n="projects.cat_auto">Automatisation</span>
+                        <h3 data-i18n="projects.p6_title">Scripts Python</h3>
+                        <p data-i18n="projects.p6_desc">Automatisation, traitement de données, outils système et applications Tkinter.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Automation</span>
+                            <span>Tkinter</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">GE<span class="dot"></span></div>
+                    <p data-i18n="footer.desc">Étudiant en cybersécurité, informatique, réseaux et électronique</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.nav_title">Navigation</h4>
+                        <a href="../index.html" data-i18n="nav.home">Accueil</a>
+                        <a href="about.html" data-i18n="nav.about">À propos</a>
+                        <a href="projects.html" data-i18n="nav.projects">Projets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gabriel Ermacora. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
